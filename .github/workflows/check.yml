@@ -1,0 +1,11 @@
+name: Check
+on: [pull_request]
+jobs:
+  build_and_preview_lab1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          cache: "npm"
+      - name: "Checking stop-watch project"
+        run: npm ci && npm run format && npm run lint && npm run lint:style
