@@ -10,7 +10,7 @@ function start(val, func){
   if(subscription?.closed || !subscription){
     let counter=val;
     stream$ = new Observable(observer=>{
-      setInterval(() => {
+    setInterval(() => {
         observer.next(++counter);
       }, 1000);
     })
