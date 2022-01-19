@@ -4,14 +4,13 @@ import { useState } from "react"
 
 let stream$ = new Observable();
 let subscription;
-let interval;
 let lastClick;
 
 function start(val, func){
   if(subscription?.closed || !subscription){
     let counter=val;
     stream$ = new Observable(observer=>{
-      interval = setInterval(() => {
+      setInterval(() => {
         observer.next(++counter);
       }, 1000);
     })
