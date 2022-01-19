@@ -1,0 +1,9 @@
+{
+  "extends": ["eslint:recommended"],
+  "plugins": ["react"],
+  "rules": {
+    "no-unused-vars": ["off", { "args": "all" }],
+    "no-undef": "off"
+  },
+  "parser": "babel-eslint"
+}
