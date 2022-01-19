@@ -3,4 +3,3 @@
 
 npm run lint --if-present
 npm run lint:style --if-present
-npm run format --if-present

@@ -8,4 +8,4 @@ jobs:
         with:
           cache: "npm"
       - name: "Checking stop-watch project"
-        run: npm ci && npm run format && npm run lint && npm run lint:style
+        run: npm ci && npm run lint && npm run lint:style
